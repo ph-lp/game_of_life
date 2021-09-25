@@ -219,15 +219,15 @@ func main() {
 	// maybe use cyclic boundaries? DONE!
 	// is a map more efficient?
 
-	var nGrid int = 31
-	var deltaP float64 = 0.05
+	var nGrid int = 9
+	var deltaP float64 = 0.1
 	fmt.Println("game of life starts")
 
 	for nStart := 3; nStart <= nGrid; nStart += 2 {
 		fmt.Printf("nGrid: %d nStart: %d\n", nGrid, nStart)
 		for p := deltaP; p < 1; p += deltaP {
 
-			var numJobs int = 50000
+			var numJobs int = 1000
 			// var nGrid int = 31
 			// var nGrid, nStart int = 31, 21
 			// var p float64 = 0.4
